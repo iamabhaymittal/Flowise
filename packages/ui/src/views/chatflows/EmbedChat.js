@@ -44,7 +44,46 @@ const embedPopupHtmlCode = (chatflowid) => {
     Chatbot.init({
         chatflowid: "${chatflowid}",
         apiHost: "${baseURL}",
-    })
+    theme: {
+      button: {
+        backgroundColor: '#E88B49',
+        right: 20,
+        bottom: 20,
+        size: 'medium',
+        iconColor: 'white',
+        customIconSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+      },
+      chatWindow: {
+        showTitle: true, // show/hide the title bar
+        title: 'Flowise Bot',
+        titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+        welcomeMessage: 'Hello! Its Valeire, how can I help you?',
+        backgroundColor: '#FFFFFF',
+        height: 700,
+        width: 400,
+        fontSize: 16,
+        poweredByTextColor: '#303235',
+        botMessage: {
+          backgroundColor: '#F7F7F7',
+          textColor: '#303235',
+          showAvatar: true,
+          avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png',
+        },
+        userMessage: {
+          backgroundColor: '#E88B49',
+          textColor: '#AEAEAE',
+          showAvatar: true,
+          avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png',
+        },
+        textInput: {
+          placeholder: 'Type your question',
+          backgroundColor: '#FFFFFF',
+          textColor: '#303235',
+          sendButtonColor: '#3B81F6',
+        },
+      },
+    },
+      })
 </script>`
 }
 
