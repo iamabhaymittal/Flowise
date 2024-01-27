@@ -37,7 +37,7 @@ const EmbedChat = ({ chatflowid }) => {
     const [value, setValue] = useState(0)
     const [embedChatCheckboxVal, setEmbedChatCheckbox] = useState(false)
     const chatflow = useSelector((state) => state.canvas.chatflow)
-    chatflowid = chatflow.id
+    // chatflowid = chatflow.id
     const chatbotConfig = chatflow.chatbotConfig ? JSON.parse(chatflow.chatbotConfig) : {}
     const embedPopupHtmlCode = (chatflowid) => {
         return `<script type="module">
