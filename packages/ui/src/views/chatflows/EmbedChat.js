@@ -41,7 +41,7 @@ const EmbedChat = ({ chatflowid }) => {
     const chatbotConfig = chatflow.chatbotConfig ? JSON.parse(chatflow.chatbotConfig) : {}
     const embedPopupHtmlCode = (chatflowid) => {
         return `<script type="module">
-        import Chatbot from "https://cdn.jsdelivr.net/gh/axentiatech/FlowiseChatEmbed@latest/dist/web.js"
+        import Chatbot from "https://cdn.jsdelivr.net/gh/axentiatech/FlowiseChatEmbed@9df31ed4a83c09cf306178c903c9543371a9025e/dist/web.js"
         Chatbot.init({
             chatflowid: "${chatflowid}",
             apiHost: "${baseURL}",
@@ -60,7 +60,7 @@ const EmbedChat = ({ chatflowid }) => {
     const embedFullpageHtmlCode = (chatflowid) => {
         return `<flowise-fullchatbot></flowise-fullchatbot>
     <script type="module">
-        import Chatbot from "https://cdn.jsdelivr.net/gh/axentiatech/FlowiseChatEmbed@latest/dist/web.js"
+        import Chatbot from "https://cdn.jsdelivr.net/gh/axentiatech/FlowiseChatEmbed@9df31ed4a83c09cf306178c903c9543371a9025e/dist/web.js"
         Chatbot.initFull({
             chatflowid: "${chatflowid}",
             apiHost: "${baseURL}",
@@ -161,7 +161,7 @@ const EmbedChat = ({ chatflowid }) => {
     }
     const embedPopupHtmlCodeCustomization = (chatflowid) => {
         return `<script type="module">
-        import Chatbot from "https://cdn.jsdelivr.net/gh/axentiatech/FlowiseChatEmbed@latest/dist/web.js"
+        import Chatbot from "https://cdn.jsdelivr.net/gh/axentiatech/FlowiseChatEmbed@9df31ed4a83c09cf306178c903c9543371a9025e/dist/web.js"
         Chatbot.init({
             chatflowid: "${chatflowid}",
             apiHost: "${baseURL}",
@@ -194,7 +194,7 @@ const EmbedChat = ({ chatflowid }) => {
     const embedFullpageHtmlCodeCustomization = (chatflowid) => {
         return `<flowise-fullchatbot></flowise-fullchatbot>
     <script type="module">
-        import Chatbot from "https://cdn.jsdelivr.net/gh/axentiatech/FlowiseChatEmbed@latest/dist/web.js"
+        import Chatbot from "https://cdn.jsdelivr.net/gh/axentiatech/FlowiseChatEmbed@9df31ed4a83c09cf306178c903c9543371a9025e/dist/web.js"
         Chatbot.initFull({
             chatflowid: "${chatflowid}",
             apiHost: "${baseURL}",
