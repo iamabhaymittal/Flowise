@@ -6,6 +6,7 @@ import { CopyBlock, atomOneDark } from "react-code-blocks";
 import { CheckboxInput } from "ui-component/checkbox/Checkbox";
 // Const
 import { baseURL } from "store/constant";
+import { useSelector } from "react-redux";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
   return (
