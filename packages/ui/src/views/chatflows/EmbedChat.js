@@ -120,7 +120,7 @@ const EmbedChat = ({ chatflowid }) => {
                         backgroundColor:  "${chatbotConfig?.userMessage?.backgroundColor}",
                         textColor: "${chatbotConfig?.userMessage?.textColor}",
                         showAvatar: "${chatbotConfig?.userMessage?.showAvatar}",
-                        avatarSrc: "${chatbotConfig?.userMessage}",
+                        avatarSrc: "${chatbotConfig?.userMessage.avatarSrc}",
                     },
                     textInput: {
                         placeholder: "${chatbotConfig?.textInput?.placeholder}",
